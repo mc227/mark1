@@ -1,3 +1,14 @@
+body {
+    background-image: url(css.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color: aqua;
+    background-attachment: fixed;
+}
+p{
+    height: 40px;
+}
 .green1 {
     color: green;
 }
