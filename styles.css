@@ -1,6 +1,21 @@
-p {
+.bigFont{
+    font-size: 44px;
+}
+
+.red {
+    color:red
+}
+
+.blue {
+    color: blue;   
+}
+
+#foo {
+    color: green;
     font-size: 34px;
 }
-div{
-    color:fuchsia
+
+#first {
+    color:aliceblue;
+    font-size: 34px;
 }
