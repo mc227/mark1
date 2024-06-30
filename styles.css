@@ -1,21 +1,15 @@
-.bigFont{
-    font-size: 44px;
-}
-
-.red {
-    color:red
-}
-
-.blue {
-    color: blue;   
-}
-
-#foo {
+.green1 {
     color: green;
-    font-size: 34px;
 }
 
-#first {
-    color:aliceblue;
-    font-size: 34px;
+.green2 {
+    color: #00FF00
+}
+
+.green3 {
+    color:rgb(0,255,0)
+}
+
+.green4{
+    color:rgba(0,255,0,0.5)
 }
