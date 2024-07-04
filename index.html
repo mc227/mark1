@@ -1,34 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Divs and Spans Example</title>
     <style>
-        div{
-            background-color: red;
-            width: 500px;
+        .ingredient{
+            color:red;
         }
-        li{
-            font-size: 3em;
+        div span.ingredient{
+            background-color: yellow;
         }
     </style>
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <div>
-        <div>Hello World</div>
-        <div>Hello World</div>
-        <span>Hello World</span>
-        <span>Hello World</span>
-        <span>Hello World</span>
-    </div>
+    <ol>
+        <li>Add the <span class="ingredient">basil</span>, <span class="ingredient">pine nuts</span> and <span class="ingredient">garlic</span> to a blender and blend into a paste.</li>
+        <li>Gradually add the <span class="ingredient">olive oil</span> while running the blender slowly.</li>
+        <li>Mix in the <span class="ingredient">Parmesan</span>. Add <span class="ingredient">salt</span> to taste and plenty of <span >black pepper</span>.</li>
+    </ol>
+    <div class="ingredient">This one is a <span class="ingredient">Parmesan</span></div>
 </body>
+
 </html>
