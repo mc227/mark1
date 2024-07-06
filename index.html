@@ -1,38 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
- 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> CSS Exercise 2 </title>
-    <link rel="stylesheet" href="exercise2.css" type="text/css">
-</head>
- 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#" class="contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <h2>Page Title</h2>
-        <p class="class1">First paragraph <a href="http://www.google.com">Google</a></p>
-        <p class="class2">second paragraph</p>
-    </section>
-    <section>
-        <h3 class="class5" style="emphasized">Section Heading</h3>
-        <p class="class3">First <span class="class4">paragraph</span></p>
-        <p>second paragraph</p>
-    </section>
-    <footer>
-        <p>My company footer</p>
-    </footer>
-</body>
- 
+<html>
+    <head>
+        <title>Floats CSS</title>
+        <style>
+            img{
+                max-width: 100%;
+                float: left;
+            }
+            .myClass2 img{
+    
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="myClass1">
+            <h1 class="myClass2">
+                <a href="https://placeholder.com"><img src="https://via.placeholder.com/350x150">
+                </a>Lorem ipsum dolor sit amet consectetuer adipiscing elit
+            </h1>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa <strong>strong</strong>. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, <img src="https://via.placeholder.com/350x150">pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede <a class="external ext" href="#">link</a> mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.
+        </div>
+        <div class="myClass3">Lorem ipsum dolor sit amet consectetuer adipiscing elit
+        </div>
+        <div class="myClass4">
+            <h2>Aenean commodo ligula eget dolor aenean massa</h2><img src="https://via.placeholder.com/350x150">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+        </div>
+    </body>
 </html>
- 
