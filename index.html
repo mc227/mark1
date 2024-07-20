@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html>
+ 
 <head>
-    <title>CSS Hyperlinks</title>
+    <title>Home Page</title>
     <style>
-        a{
-            text-decoration: none;
-        }
-        a:link{
-            color:red;
-        }
-        a:hover{
-            color:green;
-        }
-        a:visited{
-            color: pink;
-        }
-        a:active{
-            color:aqua;
-        }
-        div:hover{
-            background-color: yellow;
-            font-size: 2em;
-        }
-        .container div:last-child{
-            background: purple;
-        }
-        div:nth-child(odd){
-            background: yellow;
-        }
+        /* td {
+            border: 1px solid black;
+            padding: 10px;
+        } */
+         table{
+            width: 300px;
+         }
+         th{
+            background-color: aliceblue;
+            color: rebeccapurple;
+         }
     </style>
 </head>
+ 
 <body>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-    <section class="container">
-        <div class="test1">Example 1</div>
-        <div class="test2">Example 2</div>
-        <div class="test3">Example 3</div>
+    <header>
+        <h1>My first Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <!--Content Area add content here-->
+        <table>
+            <tr>
+                <th>First</th>
+                <th>Last</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Laurence </td>
+                <td>Svekis</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Mike</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+        </table>
+        <a href="https://placeholder.com"><img src="https://via.placeholder.com/350x150"></a>
     </section>
-    <div class="test4">Example 4</div>
-        <div class="test5">Example 5</div>
-        <div class="test6">Example 6</div>
-        <div class="test7">Example 7</div>
-        <div class="test8">Example 8</div>
+    <footer> &copy; My Website </footer>
 </body>
+ 
 </html>
