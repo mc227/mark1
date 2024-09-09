@@ -5,9 +5,16 @@
 </head>
 <body>
     <h1>Javascript</h1>
-    <button type="button">Click</button>
+    <button type="button" onclick="message('oh Hi Mark')">Click</button>
     <script>
-        document.querySelector('h1').innerHTML = "The power of sisig"
+        var b = 0;
+        // let foo = "Hello World";
+        // document.querySelector('h1').innerHTML = foo;
+        function message(a){
+            b++;
+            var output = a + " " + b
+            document.querySelector('h1').innerHTML = output;
+        }
     </script>
 </body>
 </html>
