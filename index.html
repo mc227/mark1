@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="english">
 <head>
     <title>Javascript</title>
 </head>
 <body>
-    <h1>Javascript</h1>
-    <button type="button" onclick="message('oh Hi Mark')">Click</button>
+    <h2>Javascript</h2>
+    <button type="button" onclick="message('hello world')">Click</button>
     <script>
-        var b = 0;
-        // let foo = "Hello World";
-        // document.querySelector('h1').innerHTML = foo;
         function message(a){
-            b++;
-            var output = a + " " + b
-            document.querySelector('h1').innerHTML = output;
+            alert(a)
         }
+        let celine = {
+            name:"Celine Sugay",
+            status: "married"
+        }
+
+        document.querySelector('h2').innerHTML = celine.name
     </script>
 </body>
 </html>
