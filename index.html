@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html lang="english">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript</title>
 </head>
 <body>
     <h2>Javascript</h2>
-    <button type="button" onclick="message('hello world')">Click</button>
+    <input type="text" value="test" id="myInput">
+    <button id="testButton">Click</button>
     <script>
-        function message(a){
-            alert(a)
-        }
-        let celine = {
-            name:"Celine Sugay",
-            status: "married"
+        let myBtn = document.querySelector("#testButton")
+        myBtn.addEventListener('click',message)
+        let myEle = document.querySelector('h2')
+
+        function message(){
+            let temp = document.getElementById('myInput')
+            output(temp.value)
         }
 
-        document.querySelector('h2').innerHTML = celine.name
+        function output(mess){
+            myEle.innerHTML = mess
+        }
     </script>
 </body>
 </html>
