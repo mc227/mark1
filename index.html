@@ -1,29 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Javascript</title>
+    <title>JavaScript DOM Course</title>
 </head>
 <body>
-    <div id="output"></div>
-    <input type="number" value="4" min="0" max="100" name="myNumber">
-    <input type="button" value="check" id="testBtn">
-    <script>
-        let output = document.getElementById("output")
-        let testBtn = document.getElementById("testBtn")
-        testBtn.addEventListener('click', checkVal)
-        function checkVal(){
-            let val = document.querySelector('input[name="myNumber"]').value;
-            output.innerHTML = checkNumber(val);
-        }
-        function checkNumber(num){
-            let message;
-            if(num % 2){
-                message = "Odd"
-            } else{
-                message="Even";
-            }
-            return message;
-        }
-    </script>
+    <script>console.dir(document)</script>
 </body>
 </html>
