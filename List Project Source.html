@@ -47,9 +47,6 @@
 
         function myList() {
             var temp = this.classList.toggle('red');
-            console.log(this.tester);
-            console.log(this.newWord);
-            this.newWord = "Hello";
             if (temp) {
                 var span = document.createElement('span');
                 span.textContent = ' x ';
@@ -66,7 +63,6 @@
         function makeNew() {
             var li = document.createElement('li');
             li.addEventListener('click', myList);
-            li.tester = "Hello World";
             var textValue = inputSelect.value;
             inputSelect.value = '';
             var tempNode = document.createTextNode(textValue);
