@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><title>JavaScript DOM Course</title>
-<style>
-.red{
-    background-color: red;
-    color:brown;
-}
-.blue{
-    background-color: blue;
-    color:aliceblue;
-}
-.test{
-    margin:10px;
-    padding: 10px;
-    border: 1px solid black;
-}
-</style>
-</head>
-<body>
-<a href="https://placeholder.com"><img src="https://via.placeholder.com/250/00ffff/000000" alt=""></a><br>
-<img src="https://via.placeholder.com/350x150/00ff00/ffffff" alt="">
-<script>
 
-</script>
+<head>
+    <title>JavaScript DOM Course</title>
+    
+</head>
+
+<body>
+    <ul>
+        <li>My Item</li>
+        <li>Another Item</li>
+        <li>Wow Cool</li>
+        <li>New Color</li>
+    </ul>
+    <script>
+        let ele1 = document.querySelector('ul')
+        ele1.addEventListener('click', function(){
+            ele1.style.backgroundColor = "yellow";
+        })
+    </script>
 </body>
+
 </html>
