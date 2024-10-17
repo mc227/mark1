@@ -20,11 +20,21 @@
     <script>
         /* Define a CSS class to change the background color to red */
         // Select all <li> elements and store them in eleList
+        let eleList = document.querySelectorAll('li')
         // Iterate over each <li> element in eleList
-        // Add a click event listener to each <li> element
+        for (const element of eleList){
+            // Add a click event listener to each <li> element
+            
+            element.addEventListener("click",makeRed)   
+        }
         // Log the current element to the console
          // Toggle the 'red' class on the clicked element
          // Log the result of the toggle operation
+         function makeRed(){
+            console.log(this)
+            let temp = this.classList.toggle('red')
+            console.log(temp)
+         }
     </script>
 </body>
 
