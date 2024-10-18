@@ -3,6 +3,11 @@
 
 <head>
     <title>JavaScript DOM Course</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,7 +19,15 @@
     </ul>
     <input type="text" name="myInput">
     <script>
-        
+    let elementList = document.querySelectorAll('li') 
+    for (const element of elementList){
+        element.addEventListener("mouseover",function(){
+            this.classList.add('red')
+        })
+        element.addEventListener("mouseout",function(){
+            this.classList.remove('red')
+        })
+    }
     </script>
 </body>
 
