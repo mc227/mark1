@@ -5,7 +5,9 @@
     <title>JavaScript DOM Course</title>
     <style>
         .red{
-            background-color: red;
+            background-color: #eee;
+            color: brown;
+            text-decoration: line-through;
         }
     </style>
 </head>
@@ -17,17 +19,28 @@
         <li>Wow Cool</li>
         <li>New Color</li>
     </ul>
-    <input type="text" name="myName">
+    <input type="text" name="newItem">
+    <div id="clicker">Click Me</div>
     <script>
-        let eleList = document.querySelectorAll('li')
-        for(const element of eleList){
-            element.addEventListener('mouseover',function(){
-                element.classList.add('red')
-            })
-            element.addEventListener('mouseout',function(){
-                element.classList.remove('red')
-            })
+        let mainList = document.querySelector('ul')
+        let clicker = document.getElementById('clicker')
+        let allListItems = document.querySelectorAll('li')
+        function myList(){
+            console.log(this)
+            this.classList.toggle('red')
         }
+        for (const element of allListItems){
+                element.addEventListener('click',myList)
+        }
+        clicker.addEventListener('click',function(){    
+            let li = document.createElement('li')
+            li.addEventListener('click',myList)
+            let allListItems = document.querySelectorAll('li')
+            let textValue = `test${allListItems.length+1}`
+            let textNode = document.createTextNode(textValue)
+            li.appendChild(textNode)
+            mainList.appendChild(li)
+        })
     </script>
 </body>
 
