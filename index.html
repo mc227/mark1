@@ -26,8 +26,7 @@
         let clicker = document.getElementById('clicker')
         let allListItems = document.querySelectorAll('li')
         function myList(){
-            console.log(this)
-            this.classList.toggle('red')
+            temp = this.classList.toggle('red')
         }
         for (const element of allListItems){
                 element.addEventListener('click',myList)
