@@ -25,26 +25,17 @@
     <input type="text" name="newItem">
 
     <script>
-        // Select all <li> elements in the document using 
-        let eleList = document.querySelectorAll('li');
-
-        // Loop through each list item 
+        // get list of lis
+        let eleList = document.querySelectorAll('li')
+        // add event listener to mouseover red and mouseout not red
         for (const element of eleList){
-            // Add mouseover event listener to each list item
-            element.addEventListener('mouseover',function(){
-                // When mouse hovers over the item, toggle the 'red' class
+            element.addEventListener('mouseover', function(){
                 this.classList.add('red')
             })
-            // Add mouseout event listener to each list item
             element.addEventListener('mouseout',function(){
-                // When mouse hovers over the item, toggle the 'red' class
                 this.classList.remove('red')
             })
         }
-        
-        
-        
-        
     </script>
 </body>
 
